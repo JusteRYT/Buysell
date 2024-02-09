@@ -14,6 +14,6 @@
 <hr>
 <form action="/product/delete/${product.id}" method="post">
     <input type="submit" value="Удалить товар"/>
-</from>
+</form>
 </body>
 </html>
