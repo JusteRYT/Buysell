@@ -8,6 +8,5 @@ public class BuySellApplication {
 
 	public static void main(String[] args) {
 		SpringApplication.run(BuySellApplication.class, args);
-		System.out.println("Lol");
 	}
 }
