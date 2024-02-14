@@ -6,13 +6,16 @@
 <body>
 <h1>BUYSELL</h1>
 <h4>Подробная информация о товаре</h4>
-<b>Название товара: </b>${product.title}<br>
-<b>Описание товара: </b>${product.description}<br>
-<b>Цена: </b>${product.price}<br>
-<b>Город: </b>${product.city}<br>
-<b>Автор: </b>${product.author}<br>
+<#list images as img>
+    <img src="/images/${img.id}" height="60px"/><br><br>
+</#list>
+<b>Название товара: </b>${products.title}<br>
+<b>Описание товара: </b>${products.description}<br>
+<b>Цена: </b>${products.price}<br>
+<b>Город: </b>${products.city}<br>
+<b>Автор: </b>${products.author}<br>
 <hr>
-<form action="/product/delete/${product.id}" method="post">
+<form action="/product/delete/${products.id}" method="post">
     <input type="submit" value="Удалить товар"/>
 </form>
 </body>
