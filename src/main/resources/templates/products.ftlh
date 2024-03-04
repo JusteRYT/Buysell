@@ -4,7 +4,7 @@
     <title>BUYSELL</title>
 </head>
 <body>
-<h1>Hello, BUYSELL!</h1>
+<h1>BUYSELL | <a href="/login">Войти</a></h1><hr>
 <h3>Товары со всей России</h3>
 <#list products as product>
     <div>
