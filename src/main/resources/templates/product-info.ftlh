@@ -16,6 +16,7 @@
 <b>Автор: </b>${products.author}<br>
 <hr>
 <form action="/product/delete/${products.id}" method="post">
+    <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
     <input type="submit" value="Удалить товар"/>
 </form>
 </body>
